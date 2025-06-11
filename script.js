@@ -49,7 +49,7 @@ function mousemove_effect() {
             opacity: 1,
             scale: 1
         })
-        console.log(elem1.childNodes)
+        // console.log(elem1.childNodes)
     })
     
     elem1.addEventListener("mouseleave", () => {
@@ -61,7 +61,7 @@ function mousemove_effect() {
 
     elem1.addEventListener("mousemove", (dots) => {
         gsap.to(elem1.childNodes[1], {
-                x:dots.x - elem1.getBoundingClientRect().x - 20,
+                x:dots.x - elem1.getBoundingClientRect().x - 20, //getBoundingClientRect() gives the div x and y value
                 y:dots.y - elem1.getBoundingClientRect().y - 20
             })
             console.log(elem1.getBoundingClientRect().y)

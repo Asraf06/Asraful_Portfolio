@@ -49,6 +49,8 @@ function mousemove_effect() {
             opacity: 1,
             scale: 1
         })
+
+        elem1.childNodes[3].play()
         // console.log(elem1.childNodes)
     })
     
@@ -57,6 +59,7 @@ function mousemove_effect() {
             opacity: 0,
             scale: 0
         })
+        elem1.childNodes[3].pause()
     })
 
     elem1.addEventListener("mousemove", (dots) => {

@@ -304,18 +304,6 @@ html, body {
     align-items: center;
     backdrop-filter: blur(10px);
     /* background-color: red; */
-    transform: translateX(200%);
-    animation: move 1s ease-out 4.5s forwards;
-    animation-iteration-count: unset;
-}
-
-@keyframes move {
-    from {
-        transform: translateX(200%);
-    }
-    to {
-        transform: translateX(0);
-    }
 }
 
 .content-right .img {
@@ -406,8 +394,8 @@ html, body {
 }
 
 .content-page2-center img {
-    width: 7vw;
-    height: 7vw;
+    width: 100px;
+    height: 100px;
     object-fit: contain;
     position: absolute;
     opacity: 0;

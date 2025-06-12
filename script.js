@@ -67,7 +67,7 @@ function mousemove_effect() {
                 x:dots.x - elem1.getBoundingClientRect().x - 20, //getBoundingClientRect() gives the div x and y value
                 y:dots.y - elem1.getBoundingClientRect().y - 20
             })
-            console.log(elem1.getBoundingClientRect().y)
+            // console.log(elem1.getBoundingClientRect().y)
     })
 
     elem1.childNodes[3].addEventListener("click",() => {

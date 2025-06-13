@@ -3,6 +3,17 @@ const scroll = new LocomotiveScroll({
     smooth: true
 })
 
+var aTags = document.querySelectorAll(".nav-right ul li a");
+aTags[2].addEventListener("click", function(e) {
+    e.preventDefault();
+    const target = document.querySelector(".page2");
+    if (target) {
+        scroll.scrollTo(target);
+    }
+});
+
+console.log(aTags[1])
+
 function gsap_animation() {
     const tl = gsap.timeline()
 

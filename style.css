@@ -395,8 +395,8 @@ html, body {
 
 .content-page2-center {
     position: relative;
-    width: 95%;
-    top: 0;
+    width: 90%;
+    top: 10%;
     /* margin: 0 10vw; */
     height: 100%;
     align-self: flex-start;
@@ -405,7 +405,7 @@ html, body {
 .content-page2-center video {
     border-radius: 50px;
     width: 100%;
-    height: 100%;
+    height: 90%;
     object-fit: cover;
     object-position: center;
     cursor: pointer;

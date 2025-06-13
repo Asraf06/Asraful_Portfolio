@@ -111,7 +111,6 @@ html, body {
 
 #nav{
     width: 100%;
-    color: #fff;
     position: absolute;
     z-index: 9;
     display: flex;
@@ -125,31 +124,50 @@ html, body {
 
 #nav .nav-left h1 {
     font-family: "NeueHass-bold";
+    color: #fff;
     cursor: pointer;
 }
 
+.nav-right {
+    display: flex;
+    overflow: hidden;
+}
+
 #nav .nav-right ul {
+    /* background-color: red; */
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    margin-right: 10px;
 }
 
 #nav .nav-right ul li{
-    font-size: 1.4rem;
-    font-family: "NeueHass-bold";
     padding: 5px 20px;
     list-style: none;
     border-radius: 20px;
     transition: all 200ms ease;
     cursor: pointer;
+    position: relative;
+    top: 30px;
 }
 
 #nav .nav-right ul li:hover{
     background-color: #0da34e;
 }
 
-#nav .nav-right ul li:active {
+#nav .nav-right ul li a{
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-family: "NeueHass-bold";
+    color: #fff;
+    position: relative;
+}
+
+/* #nav .nav-right ul:hover li a{
+    top: 30px;
+} */
+
+#nav .nav-right ul:active li {
     transform: scale(1.1,0.9);
 }
 
